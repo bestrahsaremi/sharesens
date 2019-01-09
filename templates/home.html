@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1 class="text-center text-info bg-dark py-4 mb-1">Share Sens</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for item in sentences %}
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card" >
+                        <div class="card-body">
+                          <h5 class="card-title">{{item.title}}</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Share</a>
+                          <a href="#" class="card-link">Save</a>
+                        </div>
+                      </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock %}
