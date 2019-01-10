@@ -6,4 +6,4 @@ class SensSerializer(ModelSerializer):
 
     class Meta:
         model = Sentences
-        fields = ['id', 'title']
+        fields = ['id', 'title', 'description', 'image', 'created_at']
