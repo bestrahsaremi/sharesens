@@ -13,7 +13,10 @@
                     <div class="card-body">
                         <h5 class="card-title">{{item.title}}</h5>
                         <p class="card-text">{{item.description}}</p>
-                        <a href="#" class="card-link pb-3 float-right">Share</a>
+                        <p class="card-text pb-2">
+                            <span class="text-muted">{{item.created_at}}</span> 
+                            <a href="#" class="float-right btn btn-info">Share</a>
+                        </p>
                     </div>
                 </div>
             {% endfor %}
